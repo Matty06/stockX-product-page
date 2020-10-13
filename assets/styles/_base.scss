@@ -7,3 +7,52 @@
 body {
     font-family: 'Proxima Nova', sans-serif;
 }
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 25px 45px;
+    box-shadow: $navbar-shadow;
+
+    &__logo {
+        max-width: 90px;
+    }
+
+    &__searchbar {
+        width: 60%;
+        height: 44px;
+        margin-left: 40px;
+        padding-left: 45px;
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 16px;
+        background: $search-bar;
+        color: #000;
+        border: none;
+
+        &::placeholder {
+            color: #000;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+
+    &__links {
+        display: flex;
+        margin-left: auto;
+        list-style: none;
+    }
+
+    &__links .link {
+        padding: 8px;
+        font-size: 16px;
+        color: $nav-link;
+        text-decoration: none;
+
+        &:hover {
+            color: lighten($nav-link, 10%);
+        }
+    }
+}

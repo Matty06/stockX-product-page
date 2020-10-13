@@ -10,4 +10,71 @@
 body {
   font-family: 'Proxima Nova', sans-serif;
 }
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 45px;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__logo {
+  max-width: 90px;
+}
+
+.navbar__searchbar {
+  width: 60%;
+  height: 44px;
+  margin-left: 40px;
+  padding-left: 45px;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 16px;
+  background: #f6f6f6;
+  color: #000;
+  border: none;
+}
+
+.navbar__searchbar::-webkit-input-placeholder {
+  color: #000;
+}
+
+.navbar__searchbar:-ms-input-placeholder {
+  color: #000;
+}
+
+.navbar__searchbar::-ms-input-placeholder {
+  color: #000;
+}
+
+.navbar__searchbar::placeholder {
+  color: #000;
+}
+
+.navbar__searchbar:focus {
+  outline: none;
+}
+
+.navbar__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  list-style: none;
+}
+
+.navbar__links .link {
+  padding: 8px;
+  font-size: 16px;
+  color: #252525;
+  text-decoration: none;
+}
+
+.navbar__links .link:hover {
+  color: #3f3f3f;
+}
 /*# sourceMappingURL=default.css.map */
