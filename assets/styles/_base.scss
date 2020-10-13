@@ -8,6 +8,37 @@ body {
     font-family: 'Proxima Nova', sans-serif;
 }
 
+.success-text {
+    color: $green;
+    font-weight: 500;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+button {
+    background: none;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+// NAVBAR
 .navbar {
     display: flex;
     align-items: center;
@@ -23,7 +54,7 @@ body {
         height: 44px;
         margin: 0 40px;
         padding-left: 45px;
-        font-family: 'Proxima Nova', sans-serif;
+        font: 16px 'Proxima Nova', sans-serif;
         font-size: 16px;
         background: $search-bar;
         color: #000;
@@ -43,7 +74,6 @@ body {
     &__links {
         display: flex;
         margin-left: auto;
-        list-style: none;
     }
 
     &__links .link {
@@ -54,6 +84,124 @@ body {
 
         &:hover {
             color: lighten($nav-link, 10%);
+        }
+    }
+}
+
+// SUBMENU (MENU, SOCIAL BUTTONS)
+.submenu {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    ul {
+        display: flex;
+    }
+
+    ul li {
+        font-size: 12px;
+        color: $submenu-link;
+        text-transform: uppercase;
+
+        &:before {
+            content: "/";
+            padding: 0 5px;
+        }
+
+        &:first-child::before {
+            content: "";
+            padding: 0;
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: darken($submenu-link, 20%);
+        }
+    }
+
+    .social-buttons button {
+        padding: 2px 8px;
+        font-family: 'Proxima Nova', sans-serif;
+        font-weight: 500;
+        border: 1px solid $social-button-border;
+        border-radius: 12px;
+
+        &:hover {
+            cursor: pointer;
+            color: lighten(#000, 20%);
+            border-color: lighten(#000, 20%);
+        }
+
+        &:focus {
+            outline: none;
+        }
+        
+        svg {
+            width: 10px;
+            margin-right: 4px;
+        }
+    }
+}
+
+.product {
+    max-width: 1000px;
+    margin: 50px auto 0;
+
+    &__title {
+        font-size: 55px;
+        color: $product__title;
+    }
+
+    &__condition-info {
+        display: flex;
+        margin-top: 10px;
+        color: #999;
+
+        p {
+            padding: 0 5px;
+        }
+    }
+
+    &__size-price {
+        display: flex;
+        margin-top: 10px;
+
+        .price {
+            font-size: 28px;
+            font-weight: 500;
+        }
+    }
+
+    &__size-price .sizes {
+        border-right: 1px solid black;
+        padding: 10px 10px 0;
+
+        p {
+            margin-bottom: 8px;
+            font-size: 17px;
+            font-weight: 600;
+            color: #999;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            background: none;
+        }
+        button svg {
+            width: 14px;
+            margin-left: 15px;
+        }
+    }
+
+    &__size-price .last-sale {
+
+        .available-sizes {
+            font-size: 13px;
+            font-weight: 500;
         }
     }
 }
