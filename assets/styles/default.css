@@ -33,6 +33,7 @@ ul li {
 }
 
 button {
+  font-family: 'Proxima Nova', sans-serif;
   background: none;
   border: none;
 }
@@ -188,7 +189,7 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10px;
+  margin: 10px 0 40px;
   color: #999;
 }
 
@@ -209,8 +210,8 @@ button:hover {
 }
 
 .product__size-price .sizes {
-  border-right: 1px solid black;
-  padding: 10px 10px 0;
+  border-right: 1px solid #ccc;
+  padding: 10px 25px 10px 0;
 }
 
 .product__size-price .sizes p {
@@ -236,8 +237,110 @@ button:hover {
   margin-left: 15px;
 }
 
+.product__size-price .last-sale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 25px;
+  text-align: center;
+}
+
+.product__size-price .last-sale .last-sale-label {
+  margin-right: 16px;
+  color: #999;
+}
+
 .product__size-price .last-sale .available-sizes {
+  margin-top: 4px;
   font-size: 13px;
+  font-weight: 600;
+}
+
+.product__size-price .lowest-ask-price, .product .highest-bid-price {
+  text-align: center;
+}
+
+.product__size-price .lowest-ask-price .button-container, .product .highest-bid-price .button-container {
+  color: #fff;
+  border-radius: 8px;
+  margin-left: 50px;
+  padding: 10px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 6px;
+}
+
+.product__size-price .lowest-ask-price .button-container:hover, .product .highest-bid-price .button-container:hover {
+  -webkit-transition: .5s background;
+  transition: .5s background;
+}
+
+.product__size-price .lowest-ask-price .button-container .light-text, .product .highest-bid-price .button-container .light-text {
+  font-size: 16px;
+}
+
+.product__size-price .lowest-ask-price .button-container .fs-lg, .product .highest-bid-price .button-container .fs-lg {
+  font-size: 28px;
   font-weight: 500;
+}
+
+.product__size-price .lowest-ask-price .button-container .y-divider, .product .highest-bid-price .button-container .y-divider {
+  border-right: 1px solid black;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  margin: 0 18px;
+}
+
+.product__size-price .lowest-ask-price .all-asks, .product__size-price .lowest-ask-price .all-bids, .product .highest-bid-price .all-asks, .product .highest-bid-price .all-bids {
+  color: black;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.product__size-price .lowest-ask-price .button-container {
+  background: #08a05c;
+}
+
+.product__size-price .lowest-ask-price .button-container:hover {
+  background: #089656;
+}
+
+.product__size-price .lowest-ask-price .button-container .light-text {
+  color: #c6e6c2;
+}
+
+.product__size-price .lowest-ask-price .button-container .y-divider {
+  border-right-color: #348a28;
+}
+
+.product__size-price .highest-bid-price .button-container {
+  background: #ff5a5f;
+}
+
+.product__size-price .highest-bid-price .button-container:hover {
+  background: #ff5055;
+}
+
+.product__size-price .highest-bid-price .button-container .light-text {
+  color: #ffcfcf;
+}
+
+.product__size-price .highest-bid-price .button-container .y-divider {
+  border-right-color: #cc4c4c;
 }
 /*# sourceMappingURL=default.css.map */

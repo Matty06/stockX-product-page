@@ -26,6 +26,7 @@ ul li {
 }
 
 button {
+    font-family: 'Proxima Nova', sans-serif;
     background: none;
     border: none;
 
@@ -156,8 +157,8 @@ button {
 
     &__condition-info {
         display: flex;
-        margin-top: 10px;
-        color: #999;
+        margin: 10px 0 40px;
+        color: $light-grey;
 
         p {
             padding: 0 5px;
@@ -175,14 +176,14 @@ button {
     }
 
     &__size-price .sizes {
-        border-right: 1px solid black;
-        padding: 10px 10px 0;
+        border-right: 1px solid #ccc;
+        padding: 10px 25px 10px 0;
 
         p {
             margin-bottom: 8px;
             font-size: 17px;
             font-weight: 600;
-            color: #999;
+            color: $light-grey;
         }
 
         button {
@@ -198,10 +199,101 @@ button {
     }
 
     &__size-price .last-sale {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 25px;
+        text-align: center;
+
+        .last-sale-label {
+            margin-right: 16px;
+            color: $light-grey;
+        }
 
         .available-sizes {
+            margin-top: 4px;
             font-size: 13px;
-            font-weight: 500;
+            font-weight: 600;
+        }
+    }
+
+    &__size-price .lowest-ask-price, .highest-bid-price {
+        text-align: center;
+
+        .button-container {
+            color: $white;
+            border-radius: 8px;
+            margin-left: 50px;
+            padding: 10px 12px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 6px;
+
+            &:hover {
+                transition: .5s background;
+            }
+
+            .light-text {
+                font-size: 16px;
+            }
+
+            .fs-lg {
+                font-size: 28px;
+                font-weight: 500;
+            }
+
+            .y-divider {
+                border-right: 1px solid black;
+                align-self: stretch;
+                margin: 0 18px;
+            }
+        }
+
+        .all-asks, .all-bids {
+            color: black;
+            font-size: 13px;
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+            text-transform: capitalize;
+        }
+    }
+
+    &__size-price .lowest-ask-price {
+        .button-container {
+            background: $green;
+
+            &:hover {
+                background: darken($green, 2%);
+            }
+
+            .light-text {
+                color: #c6e6c2;
+            }
+
+            .y-divider {
+                border-right-color: #348a28;
+            }
+
+        }
+    }
+
+
+    &__size-price .highest-bid-price {
+        .button-container {
+            background: $red;
+
+            &:hover {
+                background: darken($red, 2%);
+            }
+
+            .light-text {
+                color: #ffcfcf;
+            }
+
+            .y-divider {
+                border-right-color: #cc4c4c;
+            }
         }
     }
 }
