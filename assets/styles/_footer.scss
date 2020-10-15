@@ -1,0 +1,59 @@
+// FOOTER
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    padding: 40px 45px 80px;
+    background: $footer-bg;
+
+    .links-section {
+        padding-right: 100px;
+
+        h4 {
+           color: #fff; 
+           margin-bottom: 8px;
+        }
+
+        ul li a {
+            font-size: 13px;
+            line-height: 24px;
+            color: #808080;
+
+            &:hover {
+                cursor: pointer;
+                color: $green;
+            }
+        }
+    }
+
+    .social-sites {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            text-align: center;
+            color: $light-grey;
+            font-size: 13px;
+        }
+
+        &__links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+
+        &__links img {
+            max-width: 22px;
+            margin-right: 15px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

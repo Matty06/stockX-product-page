@@ -1,0 +1,56 @@
+// SUBMENU (MENU, SOCIAL BUTTONS)
+.submenu {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    ul {
+        display: flex;
+    }
+
+    ul li {
+        font-size: 12px;
+        color: $submenu-link;
+        text-transform: uppercase;
+
+        &:before {
+            content: "/";
+            padding: 0 5px;
+        }
+
+        &:first-child::before {
+            content: "";
+            padding: 0;
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: darken($submenu-link, 20%);
+        }
+    }
+
+    .social-buttons button {
+        padding: 2px 8px;
+        font-family: 'Proxima Nova', sans-serif;
+        font-weight: 500;
+        border: 1px solid $social-button-border;
+        border-radius: 12px;
+
+        &:hover {
+            cursor: pointer;
+            color: lighten(#000, 20%);
+            border-color: lighten(#000, 20%);
+        }
+
+        &:focus {
+            outline: none;
+        }
+        
+        svg {
+            width: 10px;
+            margin-right: 4px;
+        }
+    }
+}
