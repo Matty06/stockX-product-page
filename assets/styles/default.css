@@ -32,6 +32,10 @@ ul li {
   list-style: none;
 }
 
+ul li a {
+  text-decoration: none;
+}
+
 button {
   font-family: 'Proxima Nova', sans-serif;
   background: none;
@@ -264,13 +268,13 @@ button:hover {
 }
 
 .product__size-price .lowest-ask-price, .product .highest-bid-price {
+  margin-left: 50px;
   text-align: center;
 }
 
 .product__size-price .lowest-ask-price .button-container, .product .highest-bid-price .button-container {
   color: #fff;
   border-radius: 8px;
-  margin-left: 50px;
   padding: 10px 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -342,5 +346,110 @@ button:hover {
 
 .product__size-price .highest-bid-price .button-container .y-divider {
   border-right-color: #cc4c4c;
+}
+
+.product__image {
+  margin: 100px 0;
+  text-align: center;
+}
+
+.product__detail-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 300;
+  color: #333;
+}
+
+.product__detail-description .info {
+  width: 35%;
+  font: 20px 'Bebas Neue', sans-serif;
+}
+
+.product__detail-description .info p {
+  margin-bottom: 10px;
+}
+
+.product__detail-description .info p:last-child {
+  margin: 0;
+}
+
+.product__detail-description .description {
+  width: 65%;
+  font-size: 16px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 150px;
+  padding: 40px 45px 80px;
+  background: #3d3d3d;
+}
+
+footer .links-section {
+  padding-right: 100px;
+}
+
+footer .links-section h4 {
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+footer .links-section ul li a {
+  font-size: 13px;
+  line-height: 24px;
+  color: #808080;
+}
+
+footer .links-section ul li a:hover {
+  cursor: pointer;
+  color: #08a05c;
+}
+
+footer .social-sites {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .social-sites p {
+  text-align: center;
+  color: #999;
+  font-size: 13px;
+}
+
+footer .social-sites__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 25px;
+}
+
+footer .social-sites__links img {
+  max-width: 22px;
+  margin-right: 15px;
+}
+
+footer .social-sites__links img:last-child {
+  margin-right: 0;
+}
+
+footer .social-sites__links img:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=default.css.map */
