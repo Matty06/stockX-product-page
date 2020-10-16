@@ -70,8 +70,8 @@
     }
 
     &__size-price .sizes {
-        border-right: 1px solid #ccc;
         padding: 10px 25px 10px 0;
+        border-right: 1px solid #ccc;
 
         @media all and (max-width: $tablet) {
             width: 100%;
@@ -92,10 +92,6 @@
             @media all and (max-width: $tablet) {
                 font-size: 20px;
             }   
-        }
-
-        select {
-
         }
 
     }
@@ -137,12 +133,12 @@
         }
 
         .button-container {
-            color: $white;
-            border-radius: 8px;
-            padding: 10px 12px;
             display: flex;
             align-items: center;
             margin-bottom: 6px;
+            color: $white;
+            border-radius: 8px;
+            padding: 10px 12px;
 
             @media all and (max-width: $tablet) {
                 justify-content: center;
@@ -167,9 +163,9 @@
             }
 
             .y-divider {
-                border-right: 1px solid black;
                 align-self: stretch;
                 margin: 0 18px;
+                border-right: 1px solid black;
             }
         }
 
@@ -235,7 +231,15 @@
         text-align: center;
 
         img {
-            max-width: 700px;
+            width: 70%;
+
+            @media all and (max-width: $tablet) {
+                width: 80%;
+            }
+
+            @media all and (max-width: $mobile) {
+                width: 100%;
+            }
         }
     }
 
