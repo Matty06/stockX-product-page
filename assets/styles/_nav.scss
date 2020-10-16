@@ -5,6 +5,18 @@
     padding: 25px 45px;
     box-shadow: $navbar-shadow;
 
+    @media all and (max-width: $laptop-lg) {
+        padding: 25px 30px;
+    }
+
+    @media all and (max-width: $tablet) {
+        padding: 20px 30px;
+    }
+
+    @media all and (max-width: $mobile) {
+        padding: 15px;
+    }
+
     &__logo {
         max-width: 90px;
     }
@@ -13,13 +25,23 @@
         width: 60%;
         height: 44px;
         margin: 0 40px;
-        padding-left: 45px;
+        padding-left: 25px;
         font: 16px 'Proxima Nova', sans-serif;
         font-size: 16px;
         background: $search-bar;
         color: #000;
         border-radius: 4px;
         border: none;
+
+        @media all and (max-width: $laptop) {
+            margin-right: 25px;
+        }
+
+         
+        @media all and (max-width: $nav-mobile) {
+            display: none;
+        }
+        
 
         &::placeholder {
             color: #000;
@@ -30,17 +52,48 @@
         }
     }
 
+    &__mobile {
+        display: none;
+        margin-left: auto;
+
+        @media all and (max-width: $nav-mobile) {
+            display: block;
+        }
+
+        div {
+            width: 20px;
+            height: 2px;
+            margin-bottom: 4px;
+            border-radius: 1px;
+            background: $dark-grey;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
 
     &__links {
         display: flex;
         margin-left: auto;
+
+        @media all and (max-width: $nav-mobile) {
+            display: none;
+        }
     }
 
     &__links .link {
         padding: 8px;
         font-size: 16px;
+        white-space: nowrap;
         color: $nav-link;
         text-decoration: none;
+
+        @media all and (max-width: $laptop-lg) {
+            padding: 8px 5px;
+            font-size: 15px;
+        }
 
         &:hover {
             color: lighten($nav-link, 10%);

@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/style.min.css');
 
+// IMG PATH 
+$img-path:              "./assets/img";
+
 // COLORS 
 $white:                 #fff;
 $green:                 #08a05c;
@@ -19,3 +22,12 @@ $light-grey:            #999;
 $footer-bg:             #3d3d3d ;
 
 $navbar-shadow:     0 0 30px rgba(0, 0, 0, 0.1);
+
+// BREAKPOINTS 
+$laptop-lg:                1105px;
+$laptop:                   1024px;
+$tablet:                    768px;
+$tablet-sm:                 500px;
+$mobile:                    375px;
+
+$nav-mobile:                900px;

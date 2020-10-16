@@ -3,9 +3,37 @@
     max-width: 1000px;
     margin: 50px auto 0;
 
+    @media all and (max-width: $laptop-lg){
+        margin: 50px 45px;
+    }
+
+    @media all and (max-width: $laptop) {
+        margin: 50px 35px;
+    }
+
+    @media all and (max-width: $tablet-sm) {
+        margin: 40px 25px;
+    }
+
+    @media all and (max-width: $mobile) {
+        margin: 40px 15px;
+    }
+
     &__title {
         font-size: 55px;
         color: $product__title;
+
+        @media all and (max-width: $laptop) {
+            font-size: 45px;
+        }
+
+        @media all and (max-width: $tablet) {
+            font-size: 35px;
+        }
+
+        @media all and (max-width: $mobile) {
+            font-size: 32px;
+        }
     }
 
     &__condition-info {
@@ -13,24 +41,43 @@
         margin: 10px 0 40px;
         color: $light-grey;
 
+        @media all and (max-width: $tablet-sm) {
+            display: none;
+        }
+
         p {
             padding: 0 5px;
+        }
+
+        p:first-child {
+            padding-left: 0;
         }
     }
 
     &__size-price {
         display: flex;
+        flex-wrap: wrap;
         margin-top: 10px;
 
         .price {
             font-size: 28px;
             font-weight: 500;
+
+            @media all and (max-width: $tablet) {
+                font-size: 22px;
+            }
         }
     }
 
     &__size-price .sizes {
         border-right: 1px solid #ccc;
         padding: 10px 25px 10px 0;
+
+        @media all and (max-width: $tablet) {
+            width: 100%;
+            margin-bottom: 20px;
+            border-right: none;
+        }
 
         p {
             margin-bottom: 8px;
@@ -44,7 +91,12 @@
             align-items: center;
             font-size: 22px;
             background: none;
+
+            @media all and (max-width: $tablet) {
+                font-size: 20px;
+            }
         }
+
         button svg {
             width: 14px;
             margin-left: 15px;
@@ -57,6 +109,10 @@
         justify-content: center;
         padding-left: 25px;
         text-align: center;
+
+        @media all and (max-width: $laptop) {
+            display: none;
+        }
 
         .last-sale-label {
             margin-right: 16px;
@@ -74,6 +130,15 @@
         margin-left: 50px;
         text-align: center;
 
+        @media all and (max-width: $tablet) {
+            width: 45%;
+            margin-left: 0;
+        }
+
+        @media all and (max-width: $tablet-sm) {
+            width: 100%;
+        }
+
         .button-container {
             color: $white;
             border-radius: 8px;
@@ -81,6 +146,11 @@
             display: flex;
             align-items: center;
             margin-bottom: 6px;
+
+            @media all and (max-width: $tablet) {
+                justify-content: center;
+                width: 100%;
+            }
 
             &:hover {
                 transition: .5s background;
@@ -93,6 +163,10 @@
             .fs-lg {
                 font-size: 28px;
                 font-weight: 500;
+
+                @media all and (max-width: $tablet) {
+                    font-size: 22px;
+                }
             }
 
             .y-divider {
@@ -133,6 +207,15 @@
 
 
     &__size-price .highest-bid-price {
+
+        @media all and (max-width: $tablet) {
+            margin-left: 20px;
+        }
+
+        @media all and (max-width: $tablet-sm) {
+            margin: 20px 0 0;
+        }
+
         .button-container {
             background: $red;
 
@@ -153,16 +236,22 @@
     &__image {
         margin: 100px 0;
         text-align: center;
+
+        img {
+            max-width: 700px;
+        }
     }
 
     &__detail-description {
         display: flex;
         font-weight: 300;
         color: $dark-grey;
+
         
         .info {
             width: 35%;
             font: 20px 'Bebas Neue', sans-serif;
+
             p {
                 margin-bottom: 10px;
 
@@ -175,6 +264,19 @@
         .description {
             width: 65%;
             font-size: 16px;
+
+            @media all and (max-width: $tablet) {
+                margin-top: 30px;
+            }
         }
+
+        @media all and (max-width: $tablet) {
+            flex-direction: column;
+            
+            .info, .description {
+                width: 100%;
+            }
+        }
+
     }
 }
