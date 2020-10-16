@@ -43,4 +43,13 @@ button {
     }
 }
 
+select {
+    background: none;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
 

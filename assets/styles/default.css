@@ -50,6 +50,15 @@ button:hover {
   cursor: pointer;
 }
 
+select {
+  background: none;
+  border: none;
+}
+
+select:focus {
+  outline: none;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -393,26 +402,14 @@ button:hover {
   color: #999;
 }
 
-.product__size-price .sizes button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.product__size-price .sizes label {
   font-size: 22px;
-  background: none;
 }
 
 @media all and (max-width: 768px) {
-  .product__size-price .sizes button {
+  .product__size-price .sizes label {
     font-size: 20px;
   }
-}
-
-.product__size-price .sizes button svg {
-  width: 14px;
-  margin-left: 15px;
 }
 
 .product__size-price .last-sale {
