@@ -113,7 +113,7 @@
     display: flex;
     flex-direction: column;
     background: $white;
-    animation: .6s wAn ease-in-out forwards;
+    animation: .5s wAn linear forwards;
 
     @keyframes wAn {
         from {width: 0;}
@@ -145,8 +145,12 @@
         }
     }
 
-    .navbar__searchbar, .navbar__links, .navbar__logo {
-        animation: .8s wAn ease-in-out forwards;
+    .navbar__searchbar, .navbar__logo {
+        animation: .8s wAn linear forwards;
+    }
+
+    .navbar__links {
+        margin-left: 0;
     }
 
     .navbar__searchbar, .navbar__links, .navbar__desktop {
