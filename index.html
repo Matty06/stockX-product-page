@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>StockX - Adidas Yeezy Boost V2 Carbon</title>
     <meta property="og:title" content="adidas Yeezy Boost V2 Carbon" />
     <meta property="og:description" content="The Yeezy 350 V2 Carbon released in October of 2020." />
     <meta property="og:image" content="assets/img/og-image.png" />
@@ -9,19 +10,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/default.css">
     <link rel="shortcut icon" href="https://stockx-assets.imgix.net/logo/favicon.ico?auto=compress" type="image/x-icon">
-    <title>StockX - Adidas Yeezy Boost V2 Carbon</title>
 </head>
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar">
-        <img src="./assets/img/stockx-homepage-logo-dark.svg" class="navbar__logo" alt="">
-        <input type="text" class="navbar__searchbar" placeholder="Search for brand, color, etc.">
-        <button class="navbar__mobile">
+    <nav class="navbar" id="navbar" aria-label="main-navbar">
+        <img src="./assets/img/stockx-homepage-logo-dark.svg" class="navbar__logo" alt="stocX logo">
+        <input type="text" class="navbar__searchbar" aria-label="searchbar" placeholder="Search for brand, color, etc.">
+        <button aria-label="navbar" aria-controls="navbar" class="navbar__mobile" id="mobileNavbar">
             <div></div>
             <div></div>
             <div></div>
         </button>
-        <ul class="navbar__links">
+        <ul class="navbar__links" aria-label="navigation-links">
             <li><a href="" class="link">Browse</a></li>
             <li><a href="https://stockx.com/news/" class="link">News</a></li>
             <li><a href="" class="link">App</a></li>
@@ -34,7 +34,7 @@
     </nav>
 
     <!-- SUBMENU -->
-    <section class="submenu">
+    <section class="submenu" aria-label="submenu">
         <ul>
             <li>HOME</li>
             <li>SNEAKERS</li>
@@ -52,7 +52,7 @@
     </section>
 
     <!-- PRODUCT INFO -->
-    <section class="product">
+    <section class="product" aria-label="product-infomations">
         <h1 class="product__title">adidas Yeezy Boost 350 V2 Carbon</h1>
 
         <div class="product__condition-info">
@@ -65,7 +65,7 @@
             <div class="sizes">
                <p>Size</p>
                <label for="sizes__list">All</label>
-               <select value="All" class="sizes__list">
+               <select value="All" name="sizes__list" aria-expanded="false" class="sizes__list">
                     <option value="5">5 US</option>
                     <option value="6">6 US</option>
                     <option value="7">7 US</option>
@@ -133,38 +133,38 @@
     <footer class="footer">
         <div class="footer__group">
             <div class="links-section">
-                <h4>Supreme</h4>
+                <h4 aria-label="links-section-title">Supreme</h4>
                 <ul>
-                    <li><a href="">T-Shirts</a></li>
-                    <li><a href="">Accesories</a></li>
-                    <li><a href="">Headwear</a></li>
-                    <li><a href="">Bottoms</a></li>
-                    <li><a href="">Hoodies</a></li>
-                    <li><a href="">Box Logo</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Accesories</a></li>
+                    <li><a href="#">Headwear</a></li>
+                    <li><a href="#">Bottoms</a></li>
+                    <li><a href="#">Hoodies</a></li>
+                    <li><a href="#">Box Logo</a></li>
                 </ul>
             </div>
             <div class="links-section">
-                <h4>Popular Releases</h4>
+                <h4 aria-label="links-section-title" >Popular Releases</h4>
                 <ul>
-                    <li><a href="">Jordan 1 Lucky Green</a></li>
-                    <li><a href="">Jordan 4 Union LA Off Noir</a></li>
-                    <li><a href="">Kobe V Proto 5 Rings</a></li>
-                    <li><a href="">Air Force 1 Low Wheat Mocha</a></li>
-                    <li><a href="">Crocs Clog Classic Justin Bieber</a></li>
-                    <li><a href="">Jordan 1 Zoom Sisterhood</a></li>
+                    <li><a href="#">Jordan 1 Lucky Green</a></li>
+                    <li><a href="#">Jordan 4 Union LA Off Noir</a></li>
+                    <li><a href="#">Kobe V Proto 5 Rings</a></li>
+                    <li><a href="#">Air Force 1 Low Wheat Mocha</a></li>
+                    <li><a href="#">Crocs Clog Classic Justin Bieber</a></li>
+                    <li><a href="#">Jordan 1 Zoom Sisterhood</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer__group">
             <div class="links-section">
-                <h4>Adidas</h4>
+                <h4 aria-label="links-section-title">Adidas</h4>
                 <ul>
-                    <li><a href="">adidas Yeezy Boost 350</a></li>
-                    <li><a href="">adidas Yeezy Boost 500</a></li>
-                    <li><a href="">adidas Yeezy Boost 700</a></li>
-                    <li><a href="">adidas Yeezy Boost 380</a></li>
-                    <li><a href="">adidas Yeezy QNTM</a></li>
-                    <li><a href="">adidas NMD</a> </li>
+                    <li><a href="#">adidas Yeezy Boost 350</a></li>
+                    <li><a href="#">adidas Yeezy Boost 500</a></li>
+                    <li><a href="#">adidas Yeezy Boost 700</a></li>
+                    <li><a href="#">adidas Yeezy Boost 380</a></li>
+                    <li><a href="#">adidas Yeezy QNTM</a></li>
+                    <li><a href="#">adidas NMD</a> </li>
                 </ul>
             </div>
             <div class="social-sites">
@@ -179,5 +179,6 @@
         </div>
     </footer> 
 
+    <script src="assets/navbar.js"></script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 // NAVBAR
 .navbar {
+    position: relative;
     display: flex;
     align-items: center;
     padding: 25px 45px;
@@ -73,7 +74,6 @@
         }
     }
 
-
     &__links {
         display: flex;
         margin-left: auto;
@@ -98,5 +98,58 @@
         &:hover {
             color: lighten($nav-link, 10%);
         }
+    }
+
+    &__desktop {
+        display: none;
+    }
+}
+
+// NAVBAR --MOBILE
+.navbar.mobile {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: $white;
+    animation: .6s wAn ease-in-out forwards;
+
+    @keyframes wAn {
+        from {width: 0;}
+        to {width: 100%;}
+    }
+
+    .navbar__searchbar {
+        margin: 30px 0;
+    }
+
+    .navbar__mobile {
+        div {
+            display: none;
+        }
+
+        &::before {
+            content: ' \00D7';
+            font-size: 40px;
+            color: $dark-grey;
+        }
+    }
+
+    .navbar__links {
+        margin-top: 20px;
+        text-align: center;
+
+        li {
+            margin-top: 10px;
+        }
+    }
+
+    .navbar__searchbar, .navbar__links, .navbar__logo {
+        animation: .8s wAn ease-in-out forwards;
+    }
+
+    .navbar__searchbar, .navbar__links, .navbar__desktop {
+        display: block;
     }
 }

@@ -5,6 +5,8 @@
 // COLORS 
 $white:                 #fff;
 $black:                 #000;
+$dark-grey:             #333;
+$product__title:        $dark-grey;
 $green:                 #08a05c;
 $light-green:           #c6e6c2;
 $red:                   #ff5a5f;
@@ -12,10 +14,9 @@ $light-red:             #ffcfcf;
 $product-banner:        #2e2e2e;
 $search-bar:            #f6f6f6;
 $nav-link:              #252525;
+$hamburger:             $nav-link;
 $submenu-link:          #666;
 $social-button-border:  #2e2e2e;
-$dark-grey:             #333;
-$product__title:        $dark-grey;
 $light-grey:            #999;
 $footer-bg:             #3d3d3d ;
 
@@ -24,7 +25,7 @@ $navbar-shadow:     0 0 30px rgba(0, 0, 0, 0.1);
 // BREAKPOINTS 
 $laptop-lg:                1105px;
 $laptop:                   1024px;
+$nav-mobile:                900px;
 $tablet:                    768px;
 $tablet-sm:                 500px;
 $mobile:                    375px;
-$nav-mobile:                900px;

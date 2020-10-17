@@ -8,6 +8,10 @@ body {
     font-family: 'Proxima Nova', sans-serif;
 }
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
 .success-text {
     font-weight: 500;
     color: $green;

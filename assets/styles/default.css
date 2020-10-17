@@ -11,6 +11,10 @@ body {
   font-family: 'Proxima Nova', sans-serif;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .success-text {
   font-weight: 500;
   color: #08a05c;
@@ -60,6 +64,7 @@ select:focus {
 }
 
 .navbar {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,6 +196,76 @@ select:focus {
 
 .navbar__links .link:hover {
   color: #3f3f3f;
+}
+
+.navbar__desktop {
+  display: none;
+}
+
+.navbar.mobile {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fff;
+  -webkit-animation: .6s wAn ease-in-out forwards;
+          animation: .6s wAn ease-in-out forwards;
+}
+
+@-webkit-keyframes wAn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes wAn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.navbar.mobile .navbar__searchbar {
+  margin: 30px 0;
+}
+
+.navbar.mobile .navbar__mobile div {
+  display: none;
+}
+
+.navbar.mobile .navbar__mobile::before {
+  content: ' \00D7';
+  font-size: 40px;
+  color: #333;
+}
+
+.navbar.mobile .navbar__links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.navbar.mobile .navbar__links li {
+  margin-top: 10px;
+}
+
+.navbar.mobile .navbar__searchbar, .navbar.mobile .navbar__links, .navbar.mobile .navbar__logo {
+  -webkit-animation: .8s wAn ease-in-out forwards;
+          animation: .8s wAn ease-in-out forwards;
+}
+
+.navbar.mobile .navbar__searchbar, .navbar.mobile .navbar__links, .navbar.mobile .navbar__desktop {
+  display: block;
 }
 
 .submenu {
@@ -470,9 +545,9 @@ select:focus {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 6px;
+  padding: 10px 12px;
   color: #fff;
   border-radius: 8px;
-  padding: 10px 12px;
 }
 
 @media all and (max-width: 768px) {
